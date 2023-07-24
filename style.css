@@ -1,0 +1,106 @@
+/* 
+ * UTILITY CSS CODE - tools to make your life easier
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+/*
+    Generic image resizer to make image "responsive".
+    Images should always fit into their container & stay in proportion - max-width and height.
+  */
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.sr-only {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+
+/* 
+ * CUSTOM CSS CODE - specific styling for THIS website
+ */
+
+/* Site-wide styles - set up custom properties (CSS variables) */
+
+:root {
+    --font-serif: 'Playfair Display', serif;
+    --font-sans-serif: 'Lato', sans-serif;
+    --text: #a6bafd;
+    --background: #000121;
+    --primary: #8fb4ff;
+    --secondary: #ebf1ff;
+    --accent: #ff8f94;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = ~10px (based on 16px browser default) */
+}
+
+body {
+
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--font-sans-serif);
+    font-size: 1.6em;
+    /* ~16px default font size (based on 1rem = 10px) */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-serif);
+    color: var(--primary);
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+header {
+    text-align: center;
+    border-bottom: 5px solid var(--accent);
+}
+
+h1 {
+    font-size: clamp(3rem,5vw + 1rem,7rem );
+ }
+
+a:link {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--text);
+}
+
+a:hover,
+a:focus {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+/* Layout */
+.wrapper {
+    width: 98%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+nav li{
+    padding: 5px 0;
+}
