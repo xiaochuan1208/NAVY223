@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <p class="site-header__tagline">established since 1824</p>
+      <h1 class="site-header__main"><a href="#" class="site-header__link brand">Random Person <span class="site-header__sub">and Associates</span></a></h1>
+    </header>
+    <article class="site-article">
+      <h2 class="line-through"><span class=line-through__content>About <span class="brand">US</span></span></h2> <!-- use .brand ? -->
+      <div class="lead">
+        <!-- need to set up for two column layout  + problem with img size in flex + align items on mobile-->
+        <img src="https://dummyimage.com/320x283/950101/fff.jpg&text=office+picture" alt="person" width="320" height="283">
+        <div class="lead__content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut facilis amet iste, ipsum, quia
+          minima eos aliquam expedita temporibus quaerat. Distinctio, ligendi dolorum. Nesciunt natus deserunt
+          dicta consequuntur pariatur?</p>
+  
+        <blockquote class="lead__quote">“Help us <span class="brand">help you</span>”</blockquote>
+  
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut facilis amet iste, ipsum, quia
+          minima eos aliquam expedita temporibus quaerat. Distinctio, ligendi dolorum. Nesciunt natus deserunt
+          dicta consequuntur pariatur?</p>
+  
+        <a href="#" class="lead__link">Learn more about RP&A...</a> <!-- hover effect not working -->
+        </div>
+      </div>
+    </article>
+    <section class="site-portfolio">
+      <h2 class="line-through"><span class=line-through__content>Example of <span class="brand">our work</span></span></h2>
+  <div class="work_wrapper"><!-- flex or grid container -->
+      <figure class="work">
+        <!-- improve naming to match BEM -->
+  
+        <img class="work__img" src="https://dummyimage.com/367x254/950101/fff.jpg&text=work+picture" alt=""> <!-- fill container size up to max 100% -->
+  
+        <figcaption class="work__caption">
+  
+          <p>First example</p>
+  
+        </figcaption>
+      </figure>
+  
+      <figure class="work">
+        <!-- improve naming to match BEM -->
+  
+        <img class="work__img" src="https://dummyimage.com/367x254/950101/fff.jpg&text=work+picture" alt=""> <!-- fill container size up to max 100% -->
+  
+        <figcaption class="work__caption">
+  
+          <p>Second  example</p>
+  
+        </figcaption>
+  
+      </figure>
+       <figure class="work">
+        <!-- improve naming to match BEM -->
+  
+        <img class="work__img" src="https://dummyimage.com/367x254/950101/fff.jpg&text=work+picture" alt=""> <!-- fill container size up to max 100% -->
+  
+        <figcaption class="work__caption">
+  
+          <p>Third example with a long title for the image</p>
+  
+        </figcaption>
+  
+      </figure>
+    </div>
+    </section>
+      <footer class="site-footer">
+        <h2 class="line-through line-through--small"><span class="line-through__content"> COPYRIGHT 2222 <span class="brand">RANDOM PERSON </span>AND ASSOCIATES</span></h2>
+      </footer>
+  
+  </div>
+</body>
+</html>
