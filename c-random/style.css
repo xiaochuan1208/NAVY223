@@ -100,7 +100,32 @@ font-style: italic;
   color: #666;
 }
 
-
+/* banner */
+.site-banner {
+    line-height: 0;
+    position: relative;
+  }
+  .banner__overlay {
+    width: min(100%, 450px);
+    line-height: 1.4;
+    padding: 1em;
+    background: rgba(193, 70, 70, 0.8);
+    color: white;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+  }
+  .banner__overlay__title {
+    color: #fff;
+    font-size: 3rem;
+  }
+  
+  .banner__overlay__tag {
+    color: #fff;
+    font-family: var(--font-sans-serif);
+    letter-spacing: 3px;
+  }
 
 
 /* line through headings */

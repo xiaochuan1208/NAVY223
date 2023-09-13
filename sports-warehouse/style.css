@@ -1,0 +1,29 @@
+:root {
+    --font-family: Arial, Helvetica, sans-serif;
+    --basic-white: #FFFFFF;
+    --basic-darkblue: #002936;
+    --basic-midblue: #006989;
+    --basic-blue: #00ACED;
+    --basic-grey: #595959;
+    --basic-orange: #FB6806
+}
+html {
+    font-size: 62.5%;
+    /* 1rem = ~10px (based on 16px browser default) */
+}
+.site-wrapper{
+    width: clamp(360px, 95%, 1200px);
+    margin: 0 auto;
+    background-color: var(--basic-orange);
+    height: 2000px;
+}
+.header-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.header-top-nav{
+    background-color: var(--basic-blue);
+    padding: 8px 15px 11px;
+    display: flex;
+    justify-content: space-between;
+}
