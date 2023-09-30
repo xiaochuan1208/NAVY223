@@ -6,26 +6,349 @@
     <title>Sports Warehouse</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/28814cab9d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="site-wrapper">
        <header class="header-wrapper">
-            <div class="header-top-nav">
-                <div class="header-top-nav_menu">
-                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>menu
-                </div>
-               <div class="header-top-nav_cart"></div>
+            <div class="top-nav-wrapper">
+                <nav class="top-nav wrapper">
+                    <ul class="top-nav-menu">
+                        <li class="top-nav-toggle">
+                            <a href="#" class="top-nav-link">
+                                <div class="pre-icon">
+                                    <span class="sr-only">Open Menu</span>
+                                    <i class="fas fa-bars fa-lg" aria-label="Open Menu"></i>
+                                </div>
+                                <p>Menu</p>
+                            </a>
+                        </li>
+                    <li class="top-nav-item">
+                            <a href="#" class="top-nav-link">
+                                <div class="pre-icon">
+                                    <span class="sr-only">Circle</span>
+                                    <i class="fa-regular fa-circle fa-sm" aria-label="Circle"></i>
+                                </div>
+                                <p>Home</p>
+                            </a>
+                        </li>
+                    <li class="top-nav-item">
+                            <a href="#" class="top-nav-link">
+                                <div class="pre-icon">
+                                    <span class="sr-only">Circle</span>
+                                    <i class="fa-regular fa-circle fa-sm" aria-label="Circle"></i>
+                                </div>
+                                <p>About SW</p>
+                            </a>
+                        </li>    
+                    <li class="top-nav-item">
+                            <a href="#" class="top-nav-link">
+                                <div class="pre-icon">
+                                    <span class="sr-only">Circle</span>
+                                    <i class="fa-regular fa-circle fa-sm" aria-label="Circle"></i>
+                                </div>
+                                <p>Contact Us</p>
+                            </a>
+                        </li>
+                    <li class="top-nav-item">
+                            <a href="#" class="top-nav-link">
+                                <div class="pre-icon">
+                                    <span class="sr-only">Circle</span>
+                                    <i class="fa-regular fa-circle fa-sm" aria-label="Circle"></i>
+                                </div>
+                                <p>View Products</p>
+                            </a>
+                        </li>
+                    <li class="top-nav-item top-nav-login">
+                            <a href="#" class="top-nav-link top-nav-link__login">
+                                <div class="login-icon">
+                                    <span class="sr-only">Login</span>
+                                    <i class="fa-solid fa-lock fa-lg" aria-label="Login"></i>
+                                </div>
+                                <p>Login</p>
+                            </a>
+                        </li>
+                    <li class="top-nav-cart">
+                            <a href="#" class="top-nav-link">
+                                <div class="cart-icon">
+                                    <span class="sr-only">View Cart</span>
+                                    <i class="fa-solid fa-cart-shopping fa-lg" aria-label="View Cart"></i>
+                                </div>
+                                <p>View Cart</p>
+                            </a>
+                        </li>
+                    <li class="top-nav-quantity"><a href="#" class="top-nav-quantity-link">0 items</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="header-logo-search"></div>
-            <div class="header-category-nav"></div>
+            <div class="logo-search wrapper">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./images/sports-warehouse-logo.png" alt="logo" class="logo-img">
+                    </a>
+                </div>
+                <div class="search">
+                    <form action="/search" method="get" class="search-form">
+                        <input type="text" id="search" name="search" placeholder="Search products" class="search-box">
+                        <button class="search-button">
+                                <span class="sr-only">search</span>
+                                <i class="fa-solid fa-magnifying-glass" aria-label="search" style="color: #ffffff;font-size:18px"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="category-nav ">
+                <ul class="category-nav-menu wrapper ">
+                    <li class="category-nav-item">
+                        <a href="#" class="category-nav-link">Shoes</a>
+                        <span class="category-nav-link-icon">＞</span>
+                    </li>
+                    <li class="category-nav-item category-nav-item-active">
+                        <a href="#" class="category-nav-link">Helmets</a>
+                        <span class="category-nav-link-icon">＞</span>
+                    </li>
+                    <li class="category-nav-item">
+                        <a href="#" class="category-nav-link">Pants</a>
+                        <span class="category-nav-link-icon">＞</span>
+                    </li>
+                    <li class="category-nav-item">
+                        <a href="#" class="category-nav-link">Tops</a>
+                        <span class="category-nav-link-icon">＞</span>
+                    </li>
+                    <li class="category-nav-item">
+                        <a href="#" class="category-nav-link">Balls</a>
+                        <span class="category-nav-link-icon">＞</span>
+                    </li>
+                    <li class="category-nav-item">
+                        <a href="#" class="category-nav-link">Equipment</a>
+                        <span class="category-nav-link-icon">＞</span>
+                    </li>
+                    <li class="category-nav-item">
+                        <a href="#" class="category-nav-link">Training gear</a>
+                        <span class="category-nav-link-icon">＞</span>
+                    </li>
+                </ul>
+            </div>
        </header>
-       <section class="banner-wrapper"></section>
-       <section class="featured-wrapper"></section>
-       <main class="products-wrapper"></main>
-       <section class="brands-wrapper"></section>
-       <section class="logos-wrapper"></section>
-       <footer class="footer-wrapper"></footer>
+       <main class="main-wrapper">
+            <section class="banner-wrapper wrapper">
+                <div class="banner-frame">
+                    <img src="./images/Bannerimage.png" alt="" class="banner-image">
+                </div>
+                <div class="banner-overlay">
+                    <div class="banner-overlay-content">
+                        <p class="banner-overlay-des">View our brand new range of</p>
+                        <p class="banner-overlay-item">Sports balls</p>
+                        <button class="banner-overlay-shop">Shop now</button>
+                    </div>
+                </div>
+                <div class="banner-indicators">
+                   <span class="indicator-shape indicator-shape__active"></span>
+                   <span class="indicator-shape"></span>
+                   <span class="indicator-shape"></span>
+                </div>
+            </section>
+            <section class="title-wrapper">
+                <p class="title-content">Featured products</p>
+            </section>
+            <section class="featured-wrapper wrapper">
+                <ul class="featured-products">
+                    <li class="product-card">
+                        <div class="product-card-image">
+                            <img src="./images/prod-image.jpg" alt="featured product 1" class="product-card-image">
+                        </div>
+                        <div class="product-card-price">
+                            <p class="product-card-price-content product-card-price-content__orange">$34.95</p>
+                            <div class="product-card-price-discount">
+                                <span>was</span>
+                                <span class="product-card-price-original">$46.00</span>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card-link">adidas Euro16 Top Soccer Ball</a>
+                    </li>
+                    <li class="product-card">
+                        <div class="product-card-image">
+                            <img src="./images/helmet.png" alt="featured product 1" class="product-card-image">
+                        </div>
+                        <div class="product-card-price">
+                            <p class="product-card-price-content product-card-price-content__grey">$70.00</p>
+                            <div class="product-card-price-discount hide">
+                                <span>was</span>
+                                <span class="product-card-price-original">$46.00</span>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card-link">adidas Euro16 Top Soccer Ball</a>
+                    </li>
+                    <li class="product-card product-card-active">
+                        <div class="product-card-image">
+                            <img src="./images/water-bottle.png" alt="featured product 1" class="product-card-image">
+                        </div>
+                        <div class="product-card-price">
+                            <p class="product-card-price-content product-card-price-content__orange">$15.00</p>
+                            <div class="product-card-price-discount">
+                                <span>was</span>
+                                <span class="product-card-price-original">$17.50</span>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card-link">adidas Euro16 Top Soccer Ball</a>
+                    </li>
+                    <li class="product-card">
+                        <div class="product-card-image">
+                            <img src="./images/boxing-gloves.png" alt="featured product 1" class="product-card-image">
+                        </div>
+                        <div class="product-card-price">
+                            <p class="product-card-price-content product-card-price-content__grey">$79.95</p>
+                            <div class="product-card-price-discount hide">
+                                <span>was</span>
+                                <span class="product-card-price-original">$46.00</span>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card-link">adidas Euro16 Top Soccer Ball</a>
+                    </li>
+                    <li class="product-card">
+                        <div class="product-card-image">
+                            <img src="./images/asics-boots.png" alt="featured product 1" class="product-card-image">
+                        </div>
+                        <div class="product-card-price">
+                            <p class="product-card-price-content product-card-price-content__orange">$15.00</p>
+                            <div class="product-card-price-discount">
+                                <span>was</span>
+                                <span class="product-card-price-original">$17.50</span>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card-link">adidas Euro16 Top Soccer Ball</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="title-wrapper">
+                <p class="title-content">Our brands and partnerships</p>
+            </section>
+            <section class="brands-wrapper wrapper">
+                <div class="brands-content">
+                    <p>These are some of our top brands and partnerships.</p>
+                    <a href="#" class="brands-content-link">The best of the best is here.</a>
+                </div>
+                <div class="brands-logos">
+                    <div class="brands-logos-images">
+                        <img src="./images/logo_nike 1.png" alt="">
+                    </div>
+                    <div class="brands-logos-images">
+                        <img src="./images/logo_adidas 1.png" alt="">
+                    </div>
+                    <div class="brands-logos-images">
+                        <img src="./images/logo_skins 1.png" alt="">
+                    </div>
+                    <div class="brands-logos-images">
+                        <img src="./images/logo_asics 1.png" alt="">
+                    </div>
+                    <div class="brands-logos-images">
+                        <img src="./images/logo_newbalance 1.png" alt="">
+                    </div>
+                    <div class="brands-logos-images">
+                        <img src="./images/logo_wilson 1.png" alt="">
+                    </div>
+                </div>
+            </section>
+       </main>
+       <footer class="footer-wrapper">
+        <div class="footer wrapper">
+            <div class="footer-site-nav">
+                <h3 class="footer-title">Site navigation</h3>
+                <ul>
+                    <li class="footer-nav-item">
+                        <span class="footer-nav-icon"></span>
+                        <a href="#" class="footer-nav-link">Home</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <span class="footer-nav-icon"></span>
+                        <a href="#" class="footer-nav-link">About SW</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <span class="footer-nav-icon"></span>
+                        <a href="#" class="footer-nav-link">Contact us</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <span class="footer-nav-icon"></span>
+                        <a href="#" class="footer-nav-link">View products</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <span class="footer-nav-icon"></span>
+                        <a href="#" class="footer-nav-link">Privacy pilicy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-product-nav">
+                <h3 class="footer-title">Product categories</h3>
+                <ul>
+                    <li class="footer-nav-item">
+                        <span class="footer-nav-icon"></span>
+                        <a href="#" class="footer-nav-link">Shoes</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <span class="footer-nav-icon"></span>
+                        <a href="#" class="footer-nav-link">Helmets</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <span class="footer-nav-icon"></span>
+                        <a href="#" class="footer-nav-link">Pants</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <span class="footer-nav-icon"></span>
+                        <a href="#" class="footer-nav-link">Tops</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <span class="footer-nav-icon"></span>
+                        <a href="#" class="footer-nav-link">Balls</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <span class="footer-nav-icon"></span>
+                        <a href="#" class="footer-nav-link">Equipment</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <span class="footer-nav-icon"></span>
+                        <a href="#" class="footer-nav-link">Training gear</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-contact-info">
+                <h3 class="footer-title">Contact Sports Warehouse</h3>
+                <ul class="footer-contact-logos">
+                    <li class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <span class="sr-only">facebook</span>
+                            <i class="fa-brands fa-facebook-f" aria-label="facebook" style="color: #ffffff;font-size: 44px;"></i>
+                        </div>
+                        <a class="footer-contact-link">Facebook</a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <span class="sr-only">twitter</span>
+                            <i class="fa-brands fa-twitter" aria-label="twitter" style="color: #ffffff;font-size: 44px;"></i>
+                        </div>
+                        <a class="footer-contact-link">Twitter</a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <div class="footer-contact-icon">
+                                <span class="sr-only">other</span>
+                                <i class="fa-solid fa-paper-plane" aria-label="other" style="color: #ffffff;font-size: 44px;"></i>
+                            </div>
+                        </div>
+                        <a class="footer-contact-link">Other</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-sub">
+            <p>© Copyright 2020 Sports Warehouse.</p>
+            <p>All rights reserved.</p>
+            <p>Website made by Awesomesauce Design & Xiaochuan.</p>
+        </div>
+       </footer>
     </div>
+    <script src="./menu.js"></script>
 </body>
 </html>

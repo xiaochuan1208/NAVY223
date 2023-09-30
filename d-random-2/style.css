@@ -1,0 +1,190 @@
+/*  - set up custom properties (CSS variables) */
+:root {
+    --font-serif: Georgia, 'Times New Roman', Times, serif;
+    --font-sans-serif: Arial, Helvetica, sans-serif;
+    --brand: #950101;
+    --brand-light: #d53131;
+    --primary: #333;
+    --primary-light: #666;
+
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = ~10px (based on 16px browser default) */
+}
+
+body {
+    background-color: #ddd;
+    color: var(--primary);
+    font-family: var(--font-sans-serif);
+    font-size: 1.6em;
+    /* ~16px default font size (based on 1rem = 10px) */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-serif);
+    color: var(--primary-light);
+    text-transform: uppercase;
+}
+/* for colour highlighted text */
+.brand {
+    color: var(--brand);
+}
+
+.site-wrapper {
+    width: clamp(360px, 95%, 960px);
+    margin: 0 auto;
+  
+}
+
+/* MENU */
+nav {
+    background: var(--brand);
+    padding: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__logo {
+    font-size: 2.4rem;
+    /* 24 px */
+    font-family: var(--font-serif);
+    padding: .7rem 1rem .7rem 0;
+}
+
+.menu__item {
+    padding: 10px;
+}
+
+.button {
+    padding: 9px 5px;
+}
+
+.menu__item a:hover {
+    color: #ccc;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__link {
+    display: block;
+    padding: 15px 5px;
+}
+
+.menu__toggle {
+    font-size: 2rem;
+}
+
+.menu__item {
+    order: 2;
+    width: 100%;
+    text-align: center;
+    display: none;
+    border-bottom: 1px solid var(--brand-light);
+}
+
+/* bring buttons to the top */
+.button {
+    order: 1;
+}
+
+.button--secondary {
+    /* divider between buttons and menu links */
+    border-bottom-width: 5px;
+}
+
+/* active class added/removed by javascript when toggle is clicked */
+.active .menu__item {
+    display: block;
+}
+
+/* TABLET  Menu */
+
+@media all and (min-width: 700px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .menu__logo {
+        flex: 1;
+    }
+
+    .button {
+        width: auto;
+        order: 0;
+        display: block;
+    }
+
+    .menu__toggle {
+        flex: 1;
+        text-align: right;
+        order:1;
+       
+       
+    }
+
+    /* Button up from tablet screen */
+    .button__link {
+        padding: 10px 15px;
+        margin: 5px 0;
+        background: var(--brand-light);
+        border: 1px solid var(--brand-light);
+    }
+
+    .button--secondary .button__link {
+        background: transparent;
+    }
+
+    .button,
+    .button__secondary {
+        border: 0;
+    }
+
+    .button__link:hover {
+        text-decoration: none;
+        background: var(--brand);
+        border: 1px solid #fff;
+    }
+}
+
+/* DESKTOP Menu */
+@media all and (min-width: 600px) {
+    .menu {
+        flex-wrap: nowrap;
+    }
+
+    .menu__logo {
+        order: 0;
+    }
+
+    .menu__item {
+        order: 1;
+        display: block;
+        width: auto;
+        border: none;
+    }
+
+    .menu__toggle {
+        display: none;
+    }
+}
