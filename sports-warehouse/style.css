@@ -36,15 +36,22 @@ a{
 .top-nav-wrapper{
     background-color: var(--basic-blue);
     min-width: 360px;
+    height: 50px;
+}
+.top-nav{
+    background-color: var(--basic-blue);
+    position: relative;
+    width: 100%;
 }
 .top-nav-menu{
-    padding: 10px 0px;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     gap: 1.5rem;
     position: relative;
+    box-sizing: border-box;
 }
 .top-nav-menu a:hover{
     color: var(--basic-orange);
@@ -142,7 +149,8 @@ a{
     grid-template-columns: repeat(auto-fill,minmax(145px,1fr));
     gap: 10px;
     align-items: center;
-    padding: 12px 0px;
+    padding: 12px 10px;
+    box-sizing: border-box;
     justify-content: center;
     background-color: var(--basic-darkblue);
     border-radius: 50px 0 0 50px;
@@ -180,6 +188,8 @@ a{
 }
 .title-wrapper{
     min-width: 360px;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
 .title-content{
     font-size: 18px;
@@ -189,12 +199,13 @@ a{
     color: var(--basic-white);
     background: var(--basic-orange);
     padding-left: 20px;
-    margin-left: 20px;
 }
 .featured-products{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(155px,1fr));
     gap: 15px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 .product-card{
     display: flex;
@@ -255,9 +266,11 @@ a{
     flex-direction: column;
 }
 .brands-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 .brands-content-link{
     color: var(--basic-midblue);
@@ -302,6 +315,14 @@ a{
     justify-content: flex-start;
     gap: 5px;
     font-size: 14px;
+}
+.footer-site-nav{
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+.footer-contact-info{
+    padding: 0px 10px;
+    box-sizing: border-box;
 }
 .footer-nav-link{
     line-height: 19px;
