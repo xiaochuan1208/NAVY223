@@ -3,7 +3,8 @@
     --basic-white: #FFFFFF;
     --basic-darkblue: #002936;
     --basic-midblue: #006989;
-    --basic-blue: #00ACED;
+    /* --basic-blue: #00ACED; */
+    --basic-blue: #005A7A;
     --basic-grey: #595959;
     /* --basic-orange: #FB6806; */
     
@@ -435,11 +436,11 @@ a{
         border-radius: 50px 0 0 50px;
     }
     .category-nav-item-active{
-        background-color: #00ACED;
+        background-color: var(--basic-blue);
         border-radius:  50px 0 0 50px;
     }
     .category-nav-item:hover{
-        background-color: #00ACED;
+        background-color: var(--basic-blue);
         border-radius: 50px 0 0 50px;
     }
     .category-nav-item{
