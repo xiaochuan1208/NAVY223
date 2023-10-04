@@ -186,12 +186,12 @@ a{
     flex-direction: column;
     gap: 30px;
 }
-.title-wrapper{
+.heading-wrapper{
     min-width: 360px;
     padding-left: 20px;
     box-sizing: border-box;
 }
-.title-content{
+.heading-content{
     font-size: 18px;
     line-height: 40px;
     border-radius: 50px 0 0 50px;
@@ -452,12 +452,12 @@ a{
         display: block;
         width: 100%;
     }
-    .title-wrapper{
+    .heading-wrapper{
         padding-left: 0;
         width: clamp(360px, 96%, 960px);
         margin: 0 auto;
     }
-    .title-content{
+    .heading-content{
         margin-left: 0;
     }
     .featured-products{
