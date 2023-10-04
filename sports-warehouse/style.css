@@ -3,11 +3,11 @@
     --basic-white: #FFFFFF;
     --basic-darkblue: #002936;
     --basic-midblue: #006989;
-    /* --basic-blue: #00ACED; */
-    --basic-blue: #005A7A;
+    --basic-blue: #00ACED;
+    /* --basic-blue: #005A7A; */
     --basic-grey: #595959;
-    /* --basic-orange: #FB6806; */
-    --basic-orange: #C84F04;
+    --basic-orange: #FB6806;
+    /* --basic-orange: #C84F04; */
     --border-grey: #D0CFCF
 }
 html {
