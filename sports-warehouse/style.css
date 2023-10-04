@@ -257,6 +257,7 @@ span{
 .product-card-price-original{
     text-decoration: line-through;
     font-size: 16px;
+    color: var(--basic-grey);
 }
 .product-card-link{
     color: var(--basic-midblue);
