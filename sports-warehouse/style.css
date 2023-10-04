@@ -7,9 +7,7 @@
     --basic-blue: #005A7A;
     --basic-grey: #595959;
     /* --basic-orange: #FB6806; */
-    
     --basic-orange: #C84F04;
-
     --border-grey: #D0CFCF
 }
 html {
@@ -26,13 +24,9 @@ a{
     color: var(--basic-white);
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
 }
 span{
     color: var(--basic-white);
-}
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Open Sans', sans-serif;
 }
 .wrapper{
     width: clamp(360px, 96%, 960px);
@@ -363,7 +357,7 @@ h1,h2,h3,h4,h5,h6{
     font-size: 14px;
 }
 .footer-nav-link:hover{
-    color: var(--basic-darkblue);
+    color: var(--basic-grey);
 }
 .footer-contact-icon{
     display: flex;
@@ -569,6 +563,7 @@ h1,h2,h3,h4,h5,h6{
     .banner-overlay-item{
         font-size: 40px;
         line-height: 54px;
+        margin: 0;
     }
     .banner-overlay-shop{
         padding: 6px 20px;
