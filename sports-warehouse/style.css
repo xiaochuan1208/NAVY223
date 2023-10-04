@@ -22,6 +22,7 @@ a{
     color: var(--basic-white);
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 .wrapper{
