@@ -5,7 +5,10 @@
     --basic-midblue: #006989;
     --basic-blue: #00ACED;
     --basic-grey: #595959;
-    --basic-orange: #FB6806;
+    /* --basic-orange: #FB6806; */
+    
+    --basic-orange: #C84F04;
+
     --border-grey: #D0CFCF
 }
 html {
