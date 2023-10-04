@@ -31,7 +31,9 @@ a{
 span{
     color: var(--basic-white);
 }
-
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+}
 .wrapper{
     width: clamp(360px, 96%, 960px);
     margin: 0 auto;
@@ -361,7 +363,7 @@ span{
     font-size: 14px;
 }
 .footer-nav-link:hover{
-    color: var(--basic-grey);
+    color: var(--basic-darkblue);
 }
 .footer-contact-icon{
     display: flex;
