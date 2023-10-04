@@ -28,6 +28,9 @@ a{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
+span{
+    color: var(--basic-white);
+}
 
 .wrapper{
     width: clamp(360px, 96%, 960px);
